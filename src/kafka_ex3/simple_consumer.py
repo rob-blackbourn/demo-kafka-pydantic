@@ -2,6 +2,9 @@ from confluent_kafka import Consumer  # type: ignore[import]
 
 
 def main(topic: str) -> None:
+
+    print("Connecting to Kafka...")
+
     consumer = Consumer({
         'bootstrap.servers': 'localhost:9092',
         'group.id': 'my-group',
@@ -20,6 +23,9 @@ def main(topic: str) -> None:
             continue
 
         print(f'Received message: {msg.value()!r}')
+
+        if msg.value() == b'3':
+            break
 
     consumer.close()
 

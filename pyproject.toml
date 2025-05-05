@@ -10,6 +10,10 @@ dependencies = [
     "confluent-kafka",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "types-confluent-kafka",
+]
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"

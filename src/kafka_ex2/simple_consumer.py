@@ -4,21 +4,29 @@ from aiokafka import AIOKafkaConsumer  # type: ignore[import]
 
 
 async def main_async(topic: str):
+
+    print("Connecting to Kafka...")
+
     consumer = AIOKafkaConsumer(
         topic,
         bootstrap_servers='localhost:9092',
         group_id='my-group'
     )
 
-    # Get cluster layout
     await consumer.start()
+
     try:
-        # Consume messages
+
+        print("Waiting for messages...")
+
         async for msg in consumer:
-            print("consumed: ", msg.topic, msg.partition, msg.offset,
-                  msg.key, msg.value, msg.timestamp)
+            print(msg)
+
+            if msg.value == b'3':
+                break
+
     finally:
-        # Will leave consumer group; perform autocommit if enabled.
+
         await consumer.stop()
 
 if __name__ == '__main__':

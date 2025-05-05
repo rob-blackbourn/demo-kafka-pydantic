@@ -7,6 +7,7 @@ def main(topic: str) -> None:
         'two': '2',
         'three': '3',
     }
+
     print("Connecting to Kafka...")
     producer = KafkaProducer(bootstrap_servers='localhost:9092')
 
