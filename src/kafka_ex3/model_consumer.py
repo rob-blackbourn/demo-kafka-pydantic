@@ -20,7 +20,7 @@ def get_header_value[T](
 def main(topic: str) -> None:
     consumer = Consumer({
         'bootstrap.servers': 'localhost:9092',
-        'group.id': 'mygroup',
+        'group.id': 'my-group',
         'auto.offset.reset': 'earliest'
     })
 

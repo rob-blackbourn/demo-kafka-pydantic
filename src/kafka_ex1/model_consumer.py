@@ -19,7 +19,11 @@ def get_header_value[T](
 
 def main() -> None:
     print("Connecting to Kafka...")
-    consumer = KafkaConsumer('foobar', bootstrap_servers='localhost:9092')
+    consumer = KafkaConsumer(
+        'foobar',
+        bootstrap_servers='localhost:9092',
+        group_id='my-group'
+    )
 
     print("Waiting for messages...")
     for msg in consumer:

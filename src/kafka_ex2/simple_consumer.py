@@ -4,7 +4,11 @@ from aiokafka import AIOKafkaConsumer  # type: ignore[import]
 
 
 async def main_async(topic: str):
-    consumer = AIOKafkaConsumer(topic, bootstrap_servers='localhost:9092')
+    consumer = AIOKafkaConsumer(
+        topic,
+        bootstrap_servers='localhost:9092',
+        group_id='my-group'
+    )
 
     # Get cluster layout
     await consumer.start()

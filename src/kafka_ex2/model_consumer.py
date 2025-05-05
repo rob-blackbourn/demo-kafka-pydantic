@@ -20,7 +20,11 @@ def get_header_value[T](
 
 async def main_async(topic: str):
     print("Connecting to Kafka...")
-    consumer = AIOKafkaConsumer(topic, bootstrap_servers='localhost:9092')
+    consumer = AIOKafkaConsumer(
+        topic,
+        bootstrap_servers='localhost:9092',
+        group_id='my-group'
+    )
 
     # Get cluster layout
     await consumer.start()
