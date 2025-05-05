@@ -1,0 +1,15 @@
+[project]
+name = "demo-kafka-pydantic"
+version = "0.1.0"
+description = "A demo using kafka and pydantic"
+authors = [{name = "Rob Blackbourn", email = "rob.blackbourn@gmail.com"}]
+dependencies = [
+    "pydantic",
+    "kafka-python",
+    "aiokafka",
+    "confluent-kafka",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

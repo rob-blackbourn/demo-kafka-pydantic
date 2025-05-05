@@ -1,0 +1,101 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex1] Simple Consumer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex1/simple_consumer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex1] Simple Producer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex1/simple_producer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex1] Model Consumer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex1/model_consumer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex1] Model Producer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex1/model_producer.py",
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "[ex2] Simple Consumer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex2/simple_consumer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex2] Simple Producer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex2/simple_producer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex2] Model Consumer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex2/model_consumer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex2] Model Producer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex2/model_producer.py",
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "[ex3] Simple Consumer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex3/simple_consumer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex3] Simple Producer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex3/simple_producer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex3] Model Consumer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex3/model_consumer.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "[ex3] Model Producer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/kafka_ex3/model_producer.py",
+            "console": "integratedTerminal"
+        },
+    ]
+}
